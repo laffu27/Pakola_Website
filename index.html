@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakola</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+     <header>
+        <div class="container">
+            <img src="https://pakola.com.pk/cdn/shop/files/pakola-logo_120x.png" alt="Pakola Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a>
+                        <div class="dropdown">
+                            <a href="#">New Arrivals</a>
+                            <a href="#">Best Sellers</a>
+                            <a href="#">Sale Items</a>
+                        </div>
+                    </li>
+            <ul>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#" class="button">Sign In</a></li>
+    <li><a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+    
+</ul>
+
+                </ul>
+            </nav>
+            <div class="header-info">
+                <p>We are currently delivering only in Karachi. Minimum order is Rs. 500</p>
+            </div>
+        </div>
+    </header>
+<section class="banner">
+        <img id="banner-img" src= "https://images.deliveryhero.io/image/darsktores-pk/pk-3.jpg?height=480" alt="Banner">
+       <!--- <div class="banner-text">
+            <h2>Now With Every New Account Registration</h2>
+            <h1>Get 5 Refills <span>FREE</span></h1>
+            <p>*Terms and Conditions Apply</p>
+        </div>
+    -->
+    
+    
+    </section>
+    
+    <!-- javascript added-->
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Array of image URLs
+            const images = [
+                "https://pakola.com.pk/cdn/shop/files/Web_Banner.png?v=1678974474",
+                "https://pakola.com.pk/cdn/shop/files/banner-2.jpg?v=1648732394",
+                "https://pakola.com.pk/cdn/shop/files/pakola_water_website.png?v=1710161003",
+                "https://cdn.shopify.com/s/files/1/0572/4779/3329/files/Pakola_1024x1024.jpg?v=1627973364",
+                "https://m.media-amazon.com/images/I/71Qtd2UGbTL.jpg",
+                "https://scontent.fkhi15-1.fna.fbcdn.net/v/t39.30808-6/326079042_581305103354721_1684844519235979656_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=fChTdbzuo5IQ7kNvgEV_wPx&_nc_ht=scontent.fkhi15-1.fna&oh=00_AYDK4ti-tb6APwZcE3x4E9d70wS614ebOLGFCdt_Y9cpNg&oe=665A0526",
+                "https://mir-s3-cdn-cf.behance.net/project_modules/hd/eb4ec29755929.5602ea1b893fe.png",
+                "https://pakola.com.pk/cdn/shop/files/Pakola_web_banner.jpg?v=1692611644"
+            ];
+
+            // Current image index
+            let currentImageIndex = 0;
+
+            // Function to change the banner image
+            function changeBannerImage() {
+                const bannerImg = document.getElementById('banner-img');
+                if (bannerImg) { // Ensure the element exists
+                    currentImageIndex = (currentImageIndex + 1) % images.length;
+                    bannerImg.src = images[currentImageIndex];
+                } else {
+                    console.error('Banner image element not found');
+                }
+            }
+
+            // Change image every 3 second (3000 milliseconds)
+            setInterval(changeBannerImage, 3000);
+        });
+    </script>
+
+   <section class="new-arrival">
+    <div class="new-arrival-box">
+        <h2>New Arrival</h2>
+    </div>
+    <div class="products">
+            <div class="product-item">
+                <img src="https://pakola.com.pk/cdn/shop/files/buzzupfinal_360x.jpg" alt="Product 1">
+                <p>BREEZE Pet 500ml</p>
+                <p>Rs. 720.00</p>
+                <button>Add to Cart</button>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="product-item">
+                <img src="https://pakola.com.pk/cdn/shop/products/899916000392-PET_2_0f2a939f-2e6e-4ca6-8731-b8ad6d4462e4.jpg?v=1650955841" alt="Product 2">
+                <p>BREEZE Pet 500ml</p>
+                <p>Rs. 980.00</p>
+                <button>Add to Cart</button>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="product-item">
+                <img src="https://pakola.com.pk/cdn/shop/products/1_15086759-2b00-45c0-9747-19b11c6f086f.png?v=1671456747" alt="Product 3">
+                <p>BREEZE Pet 500ml</p>
+                <p>Rs. 520.00</p>
+                <button>Add to Cart</button>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            
+             <div class="product-item">
+                <img src="https://pakola.com.pk/cdn/shop/products/899916000330-PET_1.jpg?v=1650958325">
+                <p>BREEZE Pet 500ml</p>
+                <p>Rs. 820.00</p>
+                <button>Add to Cart</button>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+   <section class="best-seller section-container">
+    <div class="best-seller-box section-box">
+        <h2>Best Seller</h2>
+    </div>
+    <div class="products">
+            <div class="product-item">
+                <img src="https://pakola.com.pk/cdn/shop/products/899916000347-PET_1.jpg?v=1650957815" alt="Product 4">
+                <p>Pakola Ice Cream Soda 250ml</p>
+                <p>Rs. 750.00</p>
+                <button>Add to Cart</button>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbaKNWIe17qT0k665Fmx2pgAToGGudjyKrePjZfU5Nsw&s" alt="Product 5">
+                <p>Pakola Ice Cream Soda 250ml</p>
+                <p>Rs. 650.00</p>
+                <button>Add to Cart</button>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            
+            <div class="product-item">
+                <img src="https://pakola.com.pk/cdn/shop/products/8964000663288-PET_1.jpg?v=1650959295" alt="Product 6">
+                <p>Pakola Ice Cream Soda 250ml</p>
+                <p>Rs. 450.00</p>
+                <button>Add to Cart</button>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+   <section class="cordial-syrup section-container">
+    <div class="cordial-syrup-box section-box">
+        <h2>Cordial Syrups</h2>
+    </div>
+    <div class="products">
+            <div class="product-item">
+                <img src="https://pakola.com.pk/cdn/shop/products/1_d7d943ed-9bc9-470b-b2ce-127573244639.jpg?v=1650955699" alt="Syrup 1">
+                <p>Badian Zaban Cordial Syrup</p>
+                <p>Rs. 300.00</p>
+                <button>Add to Cart</button>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTozOq9wKwGX1ZeZgGv7_mgUFF1DIfTRj8KQbtPBsFFt-WQ7ZLbL5dNG-N6fnX_mK5SmM&usqp=CAU" alt="Syrup 2">
+                <p>Cream Cordial Syrup</p>
+                <p>Rs. 800.00</p>
+                <button>Add to Cart</button>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7BwW713HdxkTeqAGGBU3t4wbbpL6OaZ5Cur74qGhqw-L10ZiITvIHMieolSOQ1STDfhM&usqp=CAU" alt="Syrup 3">
+                <p>Strawberry Cordial Syrup</p>
+                <p>Rs. 200.00</p>
+                <button>Add to Cart</button>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="ads">
+        <div class="ad-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzYzkZcKX3H73apIGU3ArtvstrRIGbcYob6bA4xXNUAg&s" alt="Ad 1">
+        </div>
+        
+        <div class="ad-item">
+            <img src="https://pakola.com.pk/cdn/shop/files/pakola-grid-img_960x1056.png" alt="Ad 2">
+        </div>
+        <div class="ad-item">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cf564455992769.599c245aeaa4f.png" alt="Ad 3">
+        </div>
+         <div class="ad-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfOP0l-ukn-U4S0FkxtCPtoe54lvsP_q99mm4gdWX7fA&s" alt="Ad 4">
+        </div>
+    </section>
+
+    <section class="footer-ads">
+        <div class="footer-ad">
+            <img src="https://pakola.com.pk/cdn/shop/files/insta-img-1_318x296.png" alt="Footer Ad 1">
+        </div>
+        <div class="footer-ad">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEDKYDdQFKvAwFDDgDHW2jez8Wh8lP7p9sqSGMSragreNCK17rur5tK8gzD4IcveI4KG0&usqp=CAU" alt="Footer Ad 2">
+        </div>
+        <div class="footer-ad">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0C3k5TY5MBkaTjrgVcJrEnlvqhTIJu93xzYl7dibsaQ&s" alt="Footer Ad 3">
+        </div>
+    </section>
+    
+    
+     <section class="follow-pakola-on-instragram section-container">
+    <div class="follow-pakola-on-instragram-box section-box">
+        <h2>Follow Pakola On Instagram</h2>
+    </div>
+    <div class="products">
+        <div class="instagram-images">
+            <div class="instagram-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzo8GlIKaVCk1jKPMLk3vrr5tqzZrU5NXWj8UTtcBCNV2E7Z4pY9Z_6htHhCsuPjpBIq8&usqp=CAU" alt="Instagram 1">
+            </div>
+            <div class="instagram-image">
+                <img src="https://pakola.com.pk/cdn/shop/files/insta-img-2.png?v=1645625363" alt="Instagram 2">
+            </div>
+            <div class="instagram-image">
+                <img src="https://pakola.com.pk/cdn/shop/files/insta-img-1_318x296.png" alt="Instagram 3">
+            </div>
+            <div class="instagram-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ12t7sjiTxl1a0KLLTs-9J5pqoHfEq_2KDf67JlwJuhg&s" alt="Instagram 4">
+            </div>
+                        <div class="instagram-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5kUcvPoZBDwDMHBHXuubWezTcbyf5qTEKN_pcCMvHEQ&s" alt="Instagram 4">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <div class="footer-logo">
+                <img src="https://pakola.com.pk/cdn/shop/files/pakola-logo_120x.png" alt="Pakola Logo">
+            </div>
+            <div class="footer-contact">
+                <p>Contact Us: +92-21-722-682</p>
+                <p>Email: info@pakola.com</p>
+               
+            </div>
+    
+            <div class="footer-social">
+                <p>Connect With Us</p>
+    <a href="https://www.facebook.com" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com" target="_blank">
+        <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://www.twitter.com" target="_blank">
+        <i class="fab fa-twitter"></i>
+                </a>
+        
+</div>
+
+        </div>
+        <p>© 2024 Pakola. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
